@@ -153,7 +153,6 @@ ip flow-export version 9
 access-list 100 deny ip 172.25.2.128 0.0.0.127 any
 access-list 100 permit ospf any host 172.25.0.1
 access-list 100 permit udp any host 172.25.0.1 eq domain
-access-list 100 permit tcp any host 172.25.0.1 eq domain
 access-list 100 permit tcp any host 172.25.0.1 eq www
 access-list 100 permit tcp any host 172.25.0.1 eq 443
 access-list 100 permit tcp any host 172.25.0.1 eq 2000
@@ -167,12 +166,10 @@ access-list 103 permit ip host 0.0.0.0 host 255.255.255.255
 access-list 103 permit ip 172.25.2.0 0.0.0.127 any
 access-list 104 deny ip 172.25.2.128 0.0.0.127 any
 access-list 104 permit udp any host 172.25.2.130 eq domain
-access-list 104 permit tcp any host 172.25.2.130 eq domain
 access-list 104 permit tcp any host 172.25.2.131 eq www
 access-list 104 permit tcp any host 172.25.2.131 eq 443
 access-list 105 permit ip host 0.0.0.0 host 255.255.255.255
 access-list 105 permit udp 172.25.3.0 0.0.0.127 host 172.25.0.1 eq tftp
-access-list 105 permit tcp 172.25.3.0 0.0.0.127 host 172.25.0.1 eq tftp
 access-list 105 permit ip 172.25.3.0 0.0.0.127 any
 !
 !

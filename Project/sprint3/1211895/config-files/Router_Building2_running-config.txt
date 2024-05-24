@@ -147,7 +147,6 @@ ip flow-export version 9
 access-list 100 deny ip 172.25.6.0 0.0.0.127 any
 access-list 100 permit ospf any host 172.25.0.1
 access-list 100 permit udp any host 172.25.0.1 eq domain
-access-list 100 permit tcp any host 172.25.0.1 eq domain
 access-list 100 permit tcp any host 172.25.0.1 eq www
 access-list 100 permit tcp any host 172.25.0.1 eq 443
 access-list 100 permit tcp any host 172.25.0.1 eq 2000
@@ -161,7 +160,6 @@ access-list 103 permit ip host 0.0.0.0 host 255.255.255.255
 access-list 103 permit ip 172.25.5.0 0.0.0.255 any
 access-list 104 deny ip 172.25.6.0 0.0.0.127 any
 access-list 104 permit udp any host 172.25.6.2 eq domain
-access-list 104 permit tcp any host 172.25.6.2 eq domain
 access-list 104 permit tcp any host 172.25.6.3 eq www
 access-list 104 permit tcp any host 172.25.6.3 eq 443
 access-list 105 permit ip host 0.0.0.0 host 255.255.255.255
@@ -192,10 +190,10 @@ telephony-service
  auto assign 1 to 30
 !
 ephone-dn 2
- number 2002
+ number 2001
 !
 ephone-dn 1
- number 2001
+ number 2000
 !
 ephone 1
  device-security-mode none
